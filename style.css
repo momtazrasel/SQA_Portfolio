@@ -150,7 +150,7 @@ section h2 {
     margin-bottom: 5px;
 }
 
-/* Contact Section */
+/* Contact Section
 #contact p {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -174,7 +174,7 @@ section h2 {
 
 .contact-info a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Footer Styles */
 footer {
@@ -268,11 +268,11 @@ footer p {
     text-align: left; /* Ensures text alignment in the left direction */
 }
 
-.project h3 {
+/* .project h3 {
     font-size: 1.5em;
     color: #007bff;
     margin-bottom: 10px;
-}
+} */
 
 .project ul {
     list-style-type: disc; /* Adds bullet points */
