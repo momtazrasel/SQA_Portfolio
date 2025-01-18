@@ -6,6 +6,7 @@ body {
     color: #333;
     background: #f5f7fa;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -38,6 +39,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -81,6 +83,8 @@ header nav ul li a:hover {
     display: inline-block;
     text-align: center;
     max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #about .card img {
@@ -114,6 +118,7 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .skill {
@@ -122,6 +127,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
 
 .skill h3 {
@@ -132,4 +138,67 @@ header nav ul li a:hover {
 .skill p {
     font-size: 1.1em;
     color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    #about h2,
+    #skills h2 {
+        font-size: 2em;
+    }
+
+    #about .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header nav ul li a {
+        font-size: 0.9em;
+    }
+
+    #about h2,
+    #skills h2 {
+        font-size: 1.8em;
+    }
+
+    #about .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill h3 {
+        font-size: 1.3em;
+    }
 }
