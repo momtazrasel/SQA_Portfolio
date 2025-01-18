@@ -68,6 +68,7 @@ header nav ul li a:hover {
 
 /* Section Styles */
 section {
+    scroll-margin-top: 120px;
     padding: 50px 20px;
     text-align: center;
 }
