@@ -14,7 +14,11 @@ header {
     background: linear-gradient(to right, #4facfe, #00f2fe);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px 20px; /* Adjusted padding for better layout */
+    position: sticky; /* Makes the header stick to the top */
+    top: 0; /* Position it at the top of the viewport */
+    z-index: 1000; /* Ensures the header stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for a floating effect */
 }
 
 header h1 {
@@ -28,7 +32,7 @@ header h1 span {
 }
 
 header p {
-    margin: 10px 0 30px;
+    margin: 10px 0 20px;
     font-size: 1.2em;
 }
 
